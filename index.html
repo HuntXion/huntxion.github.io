@@ -22,9 +22,11 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            max-width: 500px;
         }
         h1 {
             font-size: 3rem;
+            text-transform: uppercase;
             margin-bottom: 10px;
             letter-spacing: 2px;
         }
@@ -33,6 +35,18 @@
             margin-top: 10px;
             line-height: 1.5;
             font-weight: 300;
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        .contact a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
         @media (max-width: 768px) {
             h1 {
@@ -48,6 +62,11 @@
     <div class="container">
         <h1>HuntXion</h1>
         <p>Welcome to HuntXion, An E2E Platform for Recon and Scanning. Stay tuned for updates.</p>
+        <div class="contact">
+            <p><strong>Contact Us:</strong></p>
+            <p>Email: <a href="mailto:gokul@huntxion.tech">gokul@huntxion.tech</a></p>
+            <p>Email: <a href="mailto:jai@huntxion.tech">jai@huntxion.tech</a></p>
+        </div>
     </div>
 </body>
 </html>
