@@ -1,72 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    display: inline;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .services, .contact {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HuntXion</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: #fff;
-        }
-        .container {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-            max-width: 500px;
-        }
-        h1 {
-            font-size: 3rem;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            line-height: 1.5;
-            font-weight: 300;
-        }
-        .contact {
-            margin-top: 20px;
-            font-size: 1rem;
-        }
-        .contact a {
-            color: #00ffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>HuntXion</h1>
-        <p>Welcome to HuntXion, An E2E Platform for Recon and Scanning. Stay tuned for updates.</p>
-        <div class="contact">
-            <p><strong>Contact Us:</strong></p>
-            <p>Email: <a href="mailto:gokul@huntxion.tech">gokul@huntxion.tech</a></p>
-            <p>Email: <a href="mailto:jai@huntxion.tech">jai@huntxion.tech</a></p>
+    <header>
+        <div class="container">
+            <h1>HuntXion</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Beyond the Ordinary</h2>
+            <p>Our Unique Recon and E2E scanning for your Business</p>
+            <a href="#contact" class="cta-button">Talk to an Expert</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About HuntXion</h2>
+            <p>At HuntXion, we go beyond the ordinary in cybersecurity. Our mission is to provide unparalleled penetration testing services that empower businesses to stay ahead of evolving digital threats.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>E2E Recon Service</h3>
+                <p>Comprehensive security assessment of web applications to identify vulnerabilities and weaknesses.</p>
+            </div>
+            <div class="service-item">
+                <h3>E2E Complete Scanning</h3>
+                <p>Comprehensive E2E complete Web Vulnerabilities Scanner</p>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Schedule a call with our expert to discuss your specific security needs and how we can help.</p>
+            <a href="mailto:info@huntxion.tech" class="cta-button">Email Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HuntXion. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
