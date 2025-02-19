@@ -3,177 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HuntXion</title>
+    <title>HuntXion - E2E Recon & Web Scanning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 1.5em;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                background-color: #000;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            nav ul.show {
-                display: flex;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-        }
-
-        .hero {
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .hero h2 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            color: #666;
-        }
-
-        .cta-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .service-item {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
+            font-family: 'Arial', sans-serif;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>HuntXion</h1>
-        <button class="menu-toggle">&#9776;</button>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-black text-white py-4 px-8 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">HuntXion</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="text-center py-20 bg-gray-900 text-white">
+        <h2 class="text-4xl font-extrabold">Advanced E2E Recon & Web Scanning</h2>
+        <p class="mt-4 text-lg">Unleashing the power of automation and security intelligence.</p>
+        <a href="#services" class="mt-6 inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Explore Services</a>
     </header>
-
-    <section class="hero">
-        <h2>Beyond the Ordinary</h2>
-        <p>Our Unique Recon and E2E scanning for your Business</p>
-        <a href="#contact" class="cta-button">Talk to an Expert</a>
-    </section>
-
-    <section id="about">
-        <h2>About HuntXion</h2>
-        <p>At HuntXion, we go beyond the ordinary in cybersecurity. Our mission is to provide unparalleled penetration testing services that empower businesses to stay ahead of evolving digital threats.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-item">
-            <h3>E2E Recon Service</h3>
-            <p>Comprehensive security assessment of web applications to identify vulnerabilities and weaknesses.</p>
-        </div>
-        <div class="service-item">
-            <h3>E2E Complete Scanning</h3>
-            <p>Comprehensive E2E complete Web Vulnerabilities Scanner</p>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-8">
+        <h3 class="text-center text-3xl font-bold">Our Services</h3>
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h4 class="text-xl font-semibold">E2E Recon Service</h4>
+                <p class="mt-2 text-gray-600">Comprehensive reconnaissance for web applications, including subdomain enumeration, port scanning, and more.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h4 class="text-xl font-semibold">E2E Web Scanning</h4>
+                <p class="mt-2 text-gray-600">Automated security scanning for vulnerabilities in web applications, ensuring maximum protection.</p>
+            </div>
         </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Schedule a call with our expert to discuss your specific security needs and how we can help.</p>
-        <a href="mailto:info@huntxion.tech" class="cta-button">Email Us</a>
+    
+    <!-- Call to Action -->
+    <section id="contact" class="bg-blue-600 text-white py-16 text-center">
+        <h3 class="text-2xl font-bold">Ready to Secure Your Applications?</h3>
+        <p class="mt-2">Contact us today and experience industry-leading security solutions.</p>
+        <a href="mailto:contact@huntxion.com" class="mt-4 inline-block bg-white text-blue-600 py-3 px-6 rounded-lg hover:bg-gray-300">Get in Touch</a>
     </section>
-
-    <footer>
-        <p>&copy; 2025 HuntXion. All rights reserved.</p>
+    
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-black text-white">
+        <p>&copy; 2025 HuntXion. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        document.querySelector(\".menu-toggle\").addEventListener(\"click\", function () {
-            document.querySelector(\"nav ul\").classList.toggle(\"show\");
-        });
-    </script>
 </body>
 </html>
